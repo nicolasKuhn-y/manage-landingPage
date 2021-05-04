@@ -5,6 +5,6 @@ Su desarrollo me permitio practicar amplios temas de css y de scss como position
 
 ### Tecnologias utilizadas
 
-+HTML semantico
-+SCSS
-+JavaScript para el menu
++ HTML semantico
++ SCSS
++ JavaScript para el menu
