@@ -1,0 +1,30 @@
+.hero {
+    padding: 0 2.375em 3em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    .hero__text-container {
+        max-width: 28.125em;
+       
+
+        .text-container__h1,
+        .text-container__btn {
+            margin: 1.5em 0;
+        }
+    }
+}
+
+@include breakPoint(large) {
+    .hero {
+        flex-flow: row-reverse;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .hero__text-container p {
+        display: inline-block;
+        max-width:  21.875rem;
+    }
+}

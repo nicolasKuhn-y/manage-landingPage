@@ -1,0 +1,13 @@
+button {
+    @include getStartedBtn($bright-red, $very-light-gray, 9rem);
+}
+
+.orange-section button {
+    @include getStartedBtn($very-light-gray, $bright-red, 9rem);
+}
+
+.grid__update-form button {
+    @include getStartedBtn($bright-red, $very-light-gray, 4.5rem);
+    box-shadow: none;
+    margin-left: .5em;
+}

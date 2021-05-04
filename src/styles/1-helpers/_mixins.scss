@@ -1,0 +1,33 @@
+@mixin getStartedBtn($background-color, $color, $min-width) {
+    cursor: pointer;
+    border: none;
+    padding: 0.8rem 0;
+    min-width: $min-width;
+    background-color: $background-color;
+    color: $color;
+    font-family: inherit;
+    font-weight: map-get($fontWeights, bold);
+    border-radius: 3rem;
+    box-shadow: 0px 12px 13px -10px #f25f3a;
+    transition: 350ms;
+
+    &:hover {
+        filter: opacity(0.6) saturate(120%);
+    }
+}
+
+@mixin pseudo($position) {
+    content: "";
+    position: $position;
+}
+
+@mixin backGroundPositioning($background-size, $background-position) {
+    background-size: $background-size;
+    background-position: $background-position;
+}
+
+@mixin breakPoint($size) {
+    @media (min-width: map-get( $breakPoints, $size)) {
+        @content;
+    }
+}

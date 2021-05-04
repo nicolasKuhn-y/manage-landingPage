@@ -1,0 +1,26 @@
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    transition:250ms;
+}
+
+header a {
+    color: $dark-blue;
+    font-weight: map-get($fontWeights, bold);
+   
+
+    &:hover {
+        color: $dark-grayish-blue;
+    }
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    transition: 750ms;
+
+    &:hover {
+        transition: 350ms;
+        color: $bright-red;
+    }
+}

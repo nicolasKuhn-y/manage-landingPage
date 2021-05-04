@@ -1,0 +1,28 @@
+.orange-section {
+    background-color: $bright-red;
+}
+
+.orange-section__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em 8em;
+
+    h2 {
+        max-width: 34.3rem;
+        color: $very-pale-red;
+    }
+}
+
+@media Screen and (max-width: 780px) {
+    .orange-section__wrapper {
+        padding: 5em 2.3em;
+        flex-flow: column;
+        text-align: center;
+
+        h2 {
+            margin-bottom: 2em;
+            width: 16.87rem;
+        }
+    }
+}

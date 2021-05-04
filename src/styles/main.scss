@@ -1,0 +1,21 @@
+// This is an SCSS file that is used to compile all other scss files. It shouldn't contain any type of styles.
+
+// 1-HELPERS
+
+@import "./1-helpers/variables",
+        "./1-helpers/mixins";
+
+// 2-BASICS
+
+@import "./2-basics/general-styles",
+        "./2-basics/anchor",
+        "./2-basics/button";
+
+// 3-LAYOUT
+
+@import "./3-layouts/header",
+        "./3-layouts/hero",
+        "./3-layouts/main-content",
+        "./3-layouts/orange-section",
+        "./3-layouts/testimonials",
+        "./3-layouts/footer";
