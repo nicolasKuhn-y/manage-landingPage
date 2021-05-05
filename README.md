@@ -8,3 +8,4 @@ Su desarrollo me permitio practicar amplios temas de css y de scss como position
 + HTML semantico
 + SCSS
 + JavaScript para el menu
++ Libreria Swiper para implementar las sliders
