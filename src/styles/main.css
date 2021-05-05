@@ -426,7 +426,11 @@ button:hover {
 
 .testimonials {
   text-align: center;
-  margin: 5.3em 1.25em;
+  margin: 5.3em 0;
+}
+
+.testimonials h2 {
+  margin-bottom: 1em;
 }
 
 .testimonials button,
@@ -434,7 +438,17 @@ button:hover {
   margin: 2em 0;
 }
 
-.slider-wrapper__slider {
+.swiper-container {
+  max-width: 80%;
+  height: 350px;
+  margin: 2em 0;
+}
+
+.swiper-slide {
+  width: 85%;
+}
+
+.slider-content {
   background-color: #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -447,24 +461,31 @@ button:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 1rem;
-  margin: 3rem 0;
+  margin: 2em auto;
+  width: 17.5rem;
 }
 
-.slider-wrapper__slider h3 {
+.slider-content h3 {
   margin-bottom: 1.2rem;
 }
 
-.slider-wrapper__slider .slider__img-container {
-  width: 70px;
-  height: 70px;
+.slider-content .slider__img-container {
+  width: 4.3rem;
+  height: 4.3rem;
   position: relative;
 }
 
-.slider-wrapper__slider .slider__img-container img {
+.slider-content .slider__img-container img {
   position: absolute;
   bottom: 2.8rem;
   left: 0;
   right: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 0.65rem !important;
+  height: 0.65rem !important;
+  background-color: #f25f3a !important;
 }
 
 @media Screen and (min-width: 1024px) {
@@ -476,8 +497,8 @@ button:hover {
     -webkit-column-gap: 2.5rem;
             column-gap: 2.5rem;
   }
-  .testimonials__slider-wrapper #hidden-slider {
-    display: none;
+  .slider-content {
+    width: 28.5rem;
   }
 }
 

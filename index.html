@@ -13,6 +13,15 @@
 
     <title>Frontend Mentor | Manage landing page</title>
     <link rel="stylesheet" href="/src/styles/main.css" />
+
+    <!---SWIPPER API-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!----FONT---AWESOME----->
     <script
       src="https://kit.fontawesome.com/41393c99d2.js"
       crossorigin="anonymous"
@@ -111,75 +120,87 @@
       <section class="testimonials">
         <h2>What they’ve said</h2>
 
-        <div
-          class="testimonials__slider-wrapper"
-          id="testimonials__slider-wrapper"
-        >
-          <arcticle class="slider-wrapper__slider">
-            <div class="slider__img-container">
-              <img src="/src/assets/images/avatar-anisha.png" alt="avatar" />
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <article class="slider-content">
+                <div class="slider__img-container">
+                  <img
+                    src="/src/assets/images/avatar-anisha.png"
+                    alt="avatar"
+                  />
+                </div>
+                <div>
+                  <h3>Anisha Li</h3>
+                  <p>
+                    “Manage has supercharged our team’s workflow. The ability to
+                    maintain visibility on larger milestones at all times keeps
+                    everyone motivated.”
+                  </p>
+                </div>
+              </article>
             </div>
-            <div>
-              <h3>Anisha Li</h3>
-              <p>
-                “Manage has supercharged our team’s workflow. The ability to
-                maintain visibility on larger milestones at all times keeps
-                everyone motivated.”
-              </p>
-            </div>
-          </arcticle>
 
-          <arcticle class="slider-wrapper__slider">
-            <div class="slider__img-container">
-              <img src="/src/assets/images/avatar-ali.png" alt="avatar" />
+            <div class="swiper-slide">
+              <article class="slider-content">
+                <div class="slider__img-container">
+                  <img src="/src/assets/images/avatar-ali.png" alt="avatar" />
+                </div>
+                <div>
+                  <h3>Ali Bravo</h3>
+                  <p>
+                    “We have been able to cancel so many other subscriptions
+                    since using Manage. There is no more cross-channel confusion
+                    and everyone is much more focused.”
+                  </p>
+                </div>
+              </article>
             </div>
-            <div>
-              <h3>Ali Bravo</h3>
-              <p>
-                “We have been able to cancel so many other subscriptions since
-                using Manage. There is no more cross-channel confusion and
-                everyone is much more focused.”
-              </p>
-            </div>
-          </arcticle>
 
-          <arcticle class="slider-wrapper__slider">
-            <div class="slider__img-container">
-              <img src="/src/assets/images/avatar-richard.png" alt="avatar" />
+            <div class="swiper-slide">
+              <article class="slider-content">
+                <div class="slider__img-container">
+                  <img
+                    src="/src/assets/images/avatar-richard.png"
+                    alt="avatar"
+                  />
+                </div>
+                <div>
+                  <h3>Richard Watts</h3>
+                  <p>
+                    “Manage allows us to provide structure and process. It keeps
+                    us organized and focused. I can’t stop recommending them to
+                    everyone I talk to!”
+                  </p>
+                </div>
+              </article>
             </div>
-            <div>
-              <h3>Richard Watts</h3>
-              <p>
-                “Manage allows us to provide structure and process. It keeps us
-                organized and focused. I can’t stop recommending them to
-                everyone I talk to!”
-              </p>
-            </div>
-          </arcticle>
 
-          <arcticle class="slider-wrapper__slider" id="hidden-slider">
-            <div class="slider__img-container">
-              <img src="/src/assets/images/avatar-shanai.png" alt="avatar" />
+            <div class="swiper-slide">
+              <article class="slider-content">
+                <div class="slider__img-container">
+                  <img
+                    src="/src/assets/images/avatar-shanai.png"
+                    alt="avatar"
+                  />
+                </div>
+                <div>
+                  <h3>Shanai Gough</h3>
+                  <p>
+                    “Their software allows us to track, manage and collaborate
+                    on our projects from anywhere. It keeps the whole team
+                    in-sync without being intrusive.”
+                  </p>
+                </div>
+              </article>
             </div>
-            <div>
-              <h3>Shanai Gough</h3>
-              <p>
-                “Their software allows us to track, manage and collaborate on
-                our projects from anywhere. It keeps the whole team in-sync
-                without being intrusive.”
-              </p>
-            </div>
-          </arcticle>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
         </div>
-
-      <!-- 
-        <div class="testimonials__radio-buttons">
-          <input type="radio" name="" id="" />
-          <input type="radio" name="" id="" />
-          <input type="radio" name="" id="" />
-          <input type="radio" name="" id="" />
-        </div>
-      -------> 
+        <div class="swiper-pagination"></div>
         <button>Get Started</button>
       </section>
 
@@ -237,6 +258,8 @@
       </div>
     </footer>
 
-    <script src="/src/script/index.js" type="module"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/src/script/index.js"></script>
   </body>
 </html>

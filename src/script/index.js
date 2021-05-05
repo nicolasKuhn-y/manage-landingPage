@@ -19,3 +19,19 @@ function changeMenuBackground(targetBackground, className) {
       "url(/src/assets/images/icon-close.svg)";
   }
 }
+
+const swiper = new Swiper(".swiper-container", {
+  direction: "horizontal",
+  loop: true,
+  speed: 750,
+
+  mousewheel: {
+    invert: true,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+});
